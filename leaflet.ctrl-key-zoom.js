@@ -1,3 +1,13 @@
+/* 
+ * Leaflet Ctrl Key Zoom Plugin 0.1a
+ * http://github.com/realzoberg/Leaflet.ctrl-key-zoom
+ * Requires Leaflet 0.6.4 (other versions are possible, but not tested)
+ * 
+ * Copyright (c) 2013 Ruslan Login
+ * The MIT License (MIT)
+ * http://github.com/realzoberg/Leaflet.ctrl-key-zoom/blob/master/LICENSE
+ */
+
 if(typeof L !== "undefined") {
     initCtrlKeyZoomPlugin(L);
 } else if(typeof define !== "undefined") {
