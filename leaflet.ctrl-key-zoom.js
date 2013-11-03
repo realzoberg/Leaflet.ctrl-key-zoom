@@ -1,7 +1,7 @@
 if(typeof L !== "undefined") {
     initCtrlKeyZoomPlugin(L);
 } else if(typeof define !== "undefined") {
-    define(["leaflet"], initCtrlKeyZoomPlugin);
+    define(["lib/leaflet"], initCtrlKeyZoomPlugin);
 } else throw Error("Leflet.ctrl-zoom-plugin wasn't able to find the Leaflet library");
 
 function initCtrlKeyZoomPlugin(L){
@@ -41,7 +41,7 @@ function initCtrlKeyZoomPlugin(L){
     };
 
     L.Control.Zoom.prototype._zoomOut = function (e) {
-        this._map.zoomOut(e.ctrlKey ? 3 : 1);
+        this._map.zoomOut(checkKey(e) ? 3 : 1);
     };
 
     L.Draggable.prototype._onDown = function (e) {
