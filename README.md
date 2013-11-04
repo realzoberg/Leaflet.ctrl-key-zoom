@@ -1,4 +1,4 @@
 lefaflet-ctrl-key-zoom
 ======================
 
-replaces shift-drag-zoom with ctrl/cmd-drag-zoom
+Replaces shift-drag-zoom with ctrl/cmd-drag-zoom. Leaflet 0.6.4 compatible (and possible other versions).
